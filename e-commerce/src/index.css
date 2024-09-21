@@ -1,0 +1,43 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transform: rotateX(0deg) translateY(360deg);
+  transform-style: preserve-3d;
+  perspective: 700px;
+  user-select: none;
+  cursor: grab;
+}
+
+.carousel-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -70px;
+  width: 150px;
+  height: 150px;
+  transform: translate3d(0, 0, -10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  transform-origin: 50% 50%;
+}
+
+@media (max-width: 600px) {
+  .carousel {
+    transform: rotateX(-10deg) scale(.6) translateY(-60px);
+  }
+}
+
+
+
+
+
+
